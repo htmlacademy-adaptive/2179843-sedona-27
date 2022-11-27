@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Sedona">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/study">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Галерея</h1>
+
+      <section class="catalog-introduction">
+        <h2 class="visually-hidden">Вступление</h2>
+        <img class="catalog-introduction__image" src="img/main_catalog/sedona.svg" width="229" height="39" alt="Sedona">
+        <div class="catalog-introduction__container catalog-intro-text">
+          <h3 class="catalog-intro-text__title">Фото и видео</h3>
+          <p class="catalog-intro-text__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/main_catalog/road.jpg" width="280"  height="280" alt="Дорога в пустыне">
+            <h3 class="gallery__title">неродные просторы</h3>
+            <p class="gallery__discription">Автор фото: Борис</p>
+            <div class="gallery__like-container">
+              <img class="gallery__like-icon" src="img/main_catalog/like_icon.svg" width="23" height="21" alt="Лайк">
+              <span class="gallery__like-amount">1350</span>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" class="gallery__image" src="img/main_catalog/plant.jpg" width="280"  height="280" alt="Кактус">
+            <h3 class="gallery__title">Местная растительность</h3>
+            <p class="gallery__discription">Автор фото: Сергей</p>
+            <div class="gallery__like-container">
+              <img class="gallery__like-icon" src="img/main_catalog/like_icon.svg" width="23" height="21" alt="Лайк">
+              <span class="gallery__like-amount">143</span>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/main_catalog/forest.jpg" width="280"  height="280" alt="Дорога в лесу">
+            <h3 class="gallery__title">Дорога на север</h3>
+            <p class="gallery__discription">Автор фото: Петр</p>
+            <div class="gallery__like-container">
+              <img class="gallery__like-icon" src="img/main_catalog/like_icon.svg" width="23" height="21" alt="Лайк">
+              <span class="gallery__like-amount">96</span>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/main_catalog/desert.jpg" width="280"  height="280" alt="Мост Дьявола">
+            <h3 class="gallery__title">Мост дьявола</h3>
+            <p class="gallery__discription">Автор фото: Антон</p>
+            <div class="gallery__like-container">
+              <img class="gallery__like-icon" src="img/main_catalog/like_icon.svg" width="23" height="21" alt="Лайк">
+              <span class="gallery__like-amount">254</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="visually-hidden">Видео презентация</h2>
+        <div class="video__container">
+          <h3 class="video__title">Все еще сомневаетесь?</h3>
+          <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <img class="video__image" src="img/main_catalog/video.jpg" width="280" height="177" alt="Дорога в горах">
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__picture-container">
+      <img class="footer__picture" src="img/visitsedona.svg" width="166" height="26" alt="visit Sedona">
+      </div>
+
+      <section class="footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="footer__logo-container">
+        <a class="footer__link" href="https://htmlacademy.ru/study">
+          <img class="footer__logo" src="img/htmlacademy_logo.svg" width="128" height="34" alt="Разработано HTML-Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
