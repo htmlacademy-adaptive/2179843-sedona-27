@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="../source/css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -14,22 +15,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a class="site-list__link">
                 Форма Отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/study">
+              <a class="site-list__link" href="https://htmlacademy.ru/study">
                 HTML ACADEMY
               </a>
             </li>
@@ -43,15 +44,17 @@
 
       <section class="introduction introduction--form">
         <h2 class="visually-hidden">Вступление</h2>
-        <img class="introduction__image" src="img/main_catalog/sedona.svg" width="229" height="39" alt="Sedona">
-        <div class="introduction__container intro-text">
+        <div class="introduction__wrapper hero hero--small">
+          <img class="introduction__image" src="img/main_catalog/sedona.svg" width="229" height="39" alt="Sedona">
+        </div>
+        <div class="introduction__container introduction__container--form intro-text">
           <h3 class="intro-text__title">Оставьте свой отзыв</h3>
-          <p class="intro-text__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="intro-text__description intro-text__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
 
       <section class="registration">
-        <h2 class="vissualy-hidden">Форма отзыва</h2>
+        <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="registration__form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="registration__container registration__container--name">
             <h3 class="registration__title">Представьтесь:</h3>
@@ -73,14 +76,14 @@
             <div class="registration__wrapper">
               <label class="registration__label" for="input-phone">Контактный телефон*:</label>
               <div class="phone-input__container">
-                <input class="registration__input phone-input" type="text" name="phone" id="input-phone" placeholder="Введите телефон">
+                <input class="registration__input registration__input--contacts phone-input" type="text" name="phone" id="input-phone" placeholder="Введите телефон">
                 <span class="phone-input__icon"></span>
               </div>
             </div>
             <div class="registration__wrapper">
               <label class="registration__label" for="input-email">Электронная почта*:</label>
               <div class="email-input__container">
-                <input class="registration__input email-input" type="text" name="email" id="input-email" placeholder="Введите e-mail">
+                <input class="registration__input registration__input--contacts email-input" type="text" name="email" id="input-email" placeholder="Введите e-mail">
                 <span class="email-input__icon"></span>
               </div>
             </div>
@@ -107,19 +110,19 @@
               <legend class="registration__title">посещенные<br> достопримечательности:</legend>
               <ul class="registration__list registration__list--places">
                 <li class="registration__item registration__item--places">
-                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Бассейн" id="checkbox-bridge" checked>
+                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Мост Дьявола" id="checkbox-bridge" checked>
                   <label class="registration__label-checkbox registration__label-checkbox--places" for="checkbox-bridge" >Мост Дьявола</label>
                 </li>
                 <li class="registration__item registration__item--places">
-                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Парковка" id="checkbox-mount" checked>
+                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Гора-Колокол" id="checkbox-mount" checked>
                   <label class="registration__label-checkbox registration__label-checkbox--places" for="checkbox-mount">Гора-Колокол</label>
                 </li>
                 <li class="registration__item registration__item--places">
-                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Wi-Fi" id="checkbox-park" checked>
+                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Слайд-парк" id="checkbox-park" checked>
                   <label class="registration__label-checkbox registration__label-checkbox--places" for="checkbox-park">Слайд-парк</label>
                 </li>
                 <li class="registration__item registration__item--places">
-                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Wi-Fi" id="checkbox-rocks">
+                  <input class="registration__input-checkbox registration__input-checkbox--places" type="checkbox" name="visited-places" value="Красные скалы" id="checkbox-rocks">
                   <label class="registration__label-checkbox registration__label-checkbox--places" for="checkbox-rocks">Красные скалы</label>
                 </li>
               </ul>
@@ -146,17 +149,17 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link">
+            <a class="social__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link">
+            <a class="social__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -170,18 +173,18 @@
       </div>
     </footer>
 
-    <div class="modal-error modal-error--hidden">
+    <div class="modal modal-error modal-error--hidden">
       <div class="modal-error__text-container">
-        <h3 class="modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-        <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <h3 class="modal__title modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+        <p class="modal__description modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
       <button class="modal-error__button button" type="button">OK</button>
     </div>
 
-    <div class="modal-success modal-success--hidden">
+    <div class="modal modal-success modal-success--hidden">
       <div class="modal-success__text-container">
-        <h3 class="modal-success__title">Ваш отзыв отправлен!</h3>
-        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <h3 class="modal__title modal-success__title">Ваш отзыв отправлен!</h3>
+        <p class="modal__description modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       </div>
       <div class="modal-succes__button-container">
         <button class="modal-success__button button" type="button">ЗАКРЫТЬ ОКНО</button>
