@@ -1,4 +1,20 @@
+.site-list {
+  padding: 0;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+  }
+}
+
 .site-list__item {
+  display: flex;
+  justify-content: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -8,9 +24,34 @@
   color: #ffffff;
   background: #81b3d2;
   box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2);
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    background: #ffffff;
+    box-shadow: none;
+    min-width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 240px;
+  }
+
+  &--active {
+    @media (min-width: @tablet-width) {
+      color: #766357;
+    }
+  }
 }
 
 .site-list__link {
-  padding: 17px 109px 12px 108px;
+  padding-top: 17px;
+  padding-bottom: 12px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
 }
