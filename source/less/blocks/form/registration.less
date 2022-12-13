@@ -49,7 +49,23 @@
   }
 }
 
+.registration__contacts-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 280px 298px;
+    column-gap: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 430px 402px;
+    column-gap: 128px;
+  }
+}
+
+
 .registration__fieldset {
+  display: flex;
+  justify-content: center;
   border: none;
   padding: 0;
   margin: 0;
@@ -64,6 +80,34 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  &--impression {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 280px);
+      gap: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: repeat(3, 280px);
+      row-gap: 17px;
+      column-gap: 28px;
+    }
+  }
+
+  &--places {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 224px);
+      column-gap: 32px;
+      row-gap: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 64px;
+    }
+  }
 }
 
 .registration__item {

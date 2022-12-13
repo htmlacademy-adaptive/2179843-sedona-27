@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo">
+    <a class="main-header__logo logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Sedona">
     </a>
     <nav class="main-header__nav main-nav">
@@ -60,8 +61,10 @@
       <div class="advantages__container">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--with-picture">
-            <h3 class="advantages__title advantages__title--with-picture">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="advantages__description advantages__description--with-picture">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <div class="advantages__text-container">
+              <h3 class="advantages__title advantages__title--with-picture">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p class="advantages__description advantages__description--with-picture">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
             <img class="advantages__image" src="img/main_index/city_photo_house.jpg" width="320" height="260"
               alt="Вид на здание Седоны">
           </li>
@@ -78,9 +81,11 @@
             <p class="advantages__description advantages__description--advice">Не только китайского, но и местного производства!</p>
           </li>
           <li class="advantages__item advantages__item--with-picture">
-            <h3 class="advantages__title advantages__title--with-picture">ТАМ ЕСТЬ Мост дьявола</h3>
-            <p class="advantages__description advantages__description--with-picture">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantages__image" src="img/main_index/city_photo_nature.jpg" width="320" height="260"
+            <div class="advantages__text-container">
+              <h3 class="advantages__title advantages__title--with-picture">ТАМ ЕСТЬ Мост дьявола</h3>
+              <p class="advantages__description advantages__description--with-picture">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="advantages__image advantages__image--left" src="img/main_index/city_photo_nature.jpg" width="320" height="260"
               alt="Вид на здание Седоны">
           </li>
           <li class="advantages__item advantages__item--without-picture">
