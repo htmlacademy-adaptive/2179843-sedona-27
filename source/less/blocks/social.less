@@ -7,8 +7,46 @@
   margin: 0;
 }
 
-.social__item {
-  width: 48px;
-  height: 48px;
-  background: #81b3d2;
+.social__icon {
+  position: absolute;
+  fill: #ffffff;
+
+  &--vk {
+    top: 17px;
+    right: 12px;
+  }
+
+  &--youtube {
+    top: 17px;
+    right: 14px;
+  }
+
+  &--telegram {
+    top: 16px;
+    right: 15px;
+  }
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  padding: 24px;
+  background-color: #81b3d2;
+
+  &--telegram {
+    background-image: url(../img/telegram-icon.svg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__link:active .social__icon {
+  fill: rgba(255, 255, 255, 0.3);
 }
