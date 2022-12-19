@@ -49,7 +49,7 @@ img {
     left: 507px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .main-header__logo {
     position: absolute;
     left: 20%;
@@ -92,7 +92,7 @@ img {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .main-nav--nojs .site-list__item {
     display: block;
   }
@@ -170,7 +170,7 @@ img {
     color: #766357;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .site-list__item--active {
     display: block;
   }
@@ -180,7 +180,7 @@ img {
   padding-bottom: 12px;
   display: block;
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .site-list__link:hover {
     background: #669ec0;
   }
@@ -296,7 +296,7 @@ img {
   background: #eeeeee;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .advantages__item--without-picture:not(:nth-child(6))::before {
     content: "";
     background: #d6d6d6;
@@ -600,7 +600,7 @@ img {
 .gallery__item {
   position: relative;
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .gallery__item::before {
     content: "";
     position: absolute;
@@ -673,7 +673,7 @@ img {
   margin-top: 17px;
   margin-bottom: 38px;
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .video__container::before {
     content: "";
     position: absolute;
@@ -710,7 +710,7 @@ img {
     text-align: start;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .registration__title--divider::before {
     content: "";
     position: absolute;
@@ -772,9 +772,6 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
-}
-.registration__input--contacts::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 .registration__input:hover,
@@ -921,7 +918,7 @@ img {
   font-weight: 700;
   font-size: 18px;
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .comments__label {
     padding-left: 38px;
     padding-right: 37px;
