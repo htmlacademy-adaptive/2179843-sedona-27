@@ -35,13 +35,11 @@ img {
   align-items: center;
   min-height: 56px;
 }
-.main-header__logo-image {
-  z-index: 1;
-}
 @media (min-width: 768px) {
   .main-header__logo-image {
     position: absolute;
     left: 291px;
+    z-index: 1;
   }
 }
 @media (min-width: 1200px) {
