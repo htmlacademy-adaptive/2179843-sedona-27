@@ -20,7 +20,7 @@
     }
   }
 
-  @media (max-width: @tablet-width) {
+  @media (min-width: @mobile-width-only) and (max-width:@tablet-width) {
     &--divider::before {
       content: "";
       position: absolute;
@@ -90,10 +90,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    color: #000000;
-  }
-
-  &--contacts::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
 
