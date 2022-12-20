@@ -1,6 +1,40 @@
 .main-header {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-height: 56px;
+}
+
+.main-header__logo-image {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 291px;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 507px;
+  }
+}
+
+@media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+  .main-header__logo {
+    position: absolute;
+    left: 20%;
+    top: 0;
+  }
+
+  .main-nav--nojs .main-header__logo {
+    display: none;
+  }
+
+  .main-nav--closed .main-header__logo {
+    display: block;
+  }
+
+  .main-nav--opened .main-header__logo {
+    display: none;
+  }
 }

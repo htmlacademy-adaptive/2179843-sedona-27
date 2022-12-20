@@ -1,5 +1,6 @@
 .site-list {
   padding: 0;
+  margin: 0;
   min-width: 320px;
 
   @media (min-width: @tablet-width) {
@@ -14,17 +15,20 @@
 }
 
 .site-list__item {
-  display: flex;
-  justify-content: center;
-  font-family: "PT Sans", sans-serif;
+  display: block;
+  font-family: @standard-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   color: #ffffff;
   background: #81b3d2;
-  box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2);
+
+  &:first-child {
+    box-shadow: none;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -33,15 +37,27 @@
     background: #ffffff;
     box-shadow: none;
     min-width: 153px;
+
+    &:nth-child(2) {
+      margin-right: 153px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-width: 240px;
+
+    &:nth-child(2) {
+      margin-right: 240px;
+    }
   }
 
   &--active {
     @media (min-width: @tablet-width) {
       color: #766357;
+    }
+
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      display: block;
     }
   }
 }
@@ -51,8 +67,29 @@
   padding-bottom: 12px;
   display: block;
 
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    &:hover {
+      background: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: #87b5d1ff;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding-top: 18px;
     padding-bottom: 17px;
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
   }
 }

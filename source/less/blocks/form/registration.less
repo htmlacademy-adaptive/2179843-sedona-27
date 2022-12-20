@@ -4,12 +4,75 @@
 }
 
 .registration__title {
+  position: relative;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  padding: 0;
   padding-top: 24px;
   padding-bottom: 20px;
   font-weight: 700;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    &--contacts {
+      text-align: start;
+    }
+  }
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    &--divider::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 1px;
+      left: 0;
+      top: -1px;
+      background: #e5e5e5;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--horizontal-divider {
+      width: 402px;
+    }
+
+    &--horizontal-divider::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background: #dbdbdb;
+      right: -141px;
+      top: 50%;
+    }
+
+    &--horizontal-divider::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background: #dbdbdb;
+      left: -141px;
+      top: 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--horizontal-divider {
+      width: 400px;
+    }
+
+    &--horizontal-divider::before {
+      width: 280px;
+      right: -261px;
+    }
+
+    &--horizontal-divider::after {
+      width: 280px;
+      left: -261px;
+    }
+  }
 }
 
 .registration__input {
@@ -17,21 +80,39 @@
   background: #f2f2f2;
   border: none;
   padding: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  outline: none;
 
   &::placeholder {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.3);
   }
 
-  &--contacts::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+  &:hover,
+  &:focus {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    outline: 4px solid #e5e5e5;
   }
 }
 
 .registration__wrapper {
   display: grid;
+
+  &--phone,
+  &--email {
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+      margin-left: 18px;
+    }
+  }
 }
 
 .registration__label {
@@ -40,8 +121,28 @@
 }
 
 .registration__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &--name {
     margin-bottom: 39px;
+    position: relative;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--name::before {
+      content: "";
+      position: absolute;
+      right: -43px;
+      width: 1px;
+      height: 338px;
+      background: #dbdbdb;
+
+      @media (min-width: @desktop-width) {
+        right: -63px;
+      }
+    }
   }
 
   &--contacts {

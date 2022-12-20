@@ -39,7 +39,7 @@
 
 .gallery__like-container {
   margin-top: 11px;
-  margin-bottom: 25px;
+  margin-bottom: 55px;
   display: flex;
 
   @media (min-width: @tablet-width) {
@@ -71,6 +71,20 @@
 }
 
 .gallery__item {
+  position: relative;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background: #e5e5e5;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
   }

@@ -1,4 +1,5 @@
 .video {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +9,17 @@
 .video__container {
   margin-top: 17px;
   margin-bottom: 38px;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      width: 320px;
+      height: 1px;
+      background: #e5e5e5;
+    }
+  }
 }
 
 .video__title,
