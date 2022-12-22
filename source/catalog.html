@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -48,7 +52,11 @@
     <section class="introduction introduction--catalog">
       <h2 class="visually-hidden">Вступление</h2>
       <div class="introduction__wrapper hero hero--small">
-        <img class="introduction__image" src="img/main_catalog/sedona.svg" width="229" height="39" alt="Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="../img/main_catalog/sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="../img/main_catalog/sedona-tablet.svg">
+          <img class="introduction__image introduction__image--additional" src="../img/main_catalog/sedona.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </div>
       <div class="introduction__container introduction__container--catalog intro-text">
         <h3 class="intro-text__title">Фото и видео</h3>
@@ -61,7 +69,11 @@
       <h2 class="visually-hidden">Галерея</h2>
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--main">
-          <img class="gallery__image" src="img/main_catalog/road.jpg" width="280" height="280" alt="Дорога в пустыне">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/main_catalog/road-desktop.jpg 1x, ../img/main_catalog/road-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../img/main_catalog/road-tablet.jpg 1x, ../img/main_catalog/road-tablet@2x.jpg 2x">
+            <img class="gallery__image gallery__image--big" src="../img/main_catalog/road.jpg" srcset="../img/main_catalog/road@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне">
+          </picture>
           <div class="gallery__desription-container gallery__desription-container--main">
             <div class="gallery__text-container gallery__text-container--main">
               <h3 class="gallery__title">неродные просторы</h3>
@@ -74,8 +86,11 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="img/main_catalog/plant.jpg" width="280" height="280"
-            alt="Кактус">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/main_catalog/plant-desktop.jpg 1x, ../img/main_catalog/plant-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../img/main_catalog/plant-tablet.jpg 1x, ../img/main_catalog/plant-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/main_catalog/plant.jpg" srcset="../img/main_catalog/plant@2x.jpg 2x" width="280" height="280" alt="Кактус">
+          </picture>
           <div class="gallery__desription-container">
             <div class="gallery__text-container">
               <h3 class="gallery__title">Местная растительность</h3>
@@ -88,7 +103,11 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="img/main_catalog/forest.jpg" width="280" height="280" alt="Дорога в лесу">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/main_catalog/forest-desktop.jpg 1x, ../img/main_catalog/forest-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../img/main_catalog/forest-tablet.jpg 1x, ../img/main_catalog/forest-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/main_catalog/forest.jpg" srcset="../img/main_catalog/forest@2x.jpg 2x" width="280" height="280" alt="Дорога в лесу">
+          </picture>
           <div class="gallery__desription-container gallery__desription-container--with-neighbour">
             <div class="gallery__text-container">
               <h3 class="gallery__title">Дорога на север</h3>
@@ -101,7 +120,11 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="img/main_catalog/desert.jpg" width="280" height="280" alt="Мост Дьявола">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/main_catalog/desert-desktop.jpg 1x, ../img/main_catalog/desert-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../img/main_catalog/desert-tablet.jpg 1x, ../img/main_catalog/desert-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/main_catalog/desert.jpg" srcset="../img/main_catalog/desert@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола">
+          </picture>
           <div class="gallery__desription-container">
             <div class="gallery__text-container">
               <h3 class="gallery__title">Мост дьявола</h3>
@@ -122,7 +145,11 @@
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
       </div>
-      <img class="video__image" src="img/main_catalog/video.jpg" width="280" height="177" alt="Дорога в горах">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="../img/main_catalog/video-desktop.jpg 1x, ../img/main_catalog/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="../img/main_catalog/video-tablet.jpg 1x, ../img/main_catalog/video-tablet@2x.jpg 2x">
+        <img class="video__image" src="img/main_catalog/video.jpg" srcset="../img/main_catalog/video@2x.jpg 2x" width="280" height="177" alt="Дорога в горах">
+      </picture>
     </section>
 
   </main>

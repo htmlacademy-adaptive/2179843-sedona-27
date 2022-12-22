@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .registration__title {
   position: relative;
   line-height: 26px;
@@ -226,6 +232,27 @@
 
 .registration__button {
   padding: 16px 49px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+  }
+}
+
+.registration__button-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
 }
 
 .registration__notice {
@@ -236,4 +263,9 @@
   margin-bottom: 24px;
   display: flex;
   justify-content: right;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+    margin-bottom: 14px;
+  }
 }

@@ -22,10 +22,35 @@
   }
 }
 
+.video__title {
+  padding-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    padding-bottom: 35px;
+  }
+}
+
 .video__title,
 .video__description {
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    width: 580px;
+  }
+}
+
+.video__image {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
 }

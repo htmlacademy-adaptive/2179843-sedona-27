@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -47,12 +51,15 @@
     <section class="introduction introduction--index">
       <h2 class="visually-hidden">Вступление</h2>
       <div class="introduction__wrapper hero">
-        <img class="introduction__image" src="img/main_index/welcome_text.svg" width="282" height="214"
-        alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="../img/main_index/welcome_text-desktop.svg">
+          <source media="(min-width: 768px)" srcset="../img/main_index/welcome_text-tablet.svg">
+          <img class="introduction__image" src="../img/main_index/welcome_text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+        </picture>
       </div>
       <div class="introduction__container intro-text">
-        <h3 class="intro-text__title">СЕДОНА — небольшой<br> городок в АРИЗОНЕ,<br> заслуживающий большего!</h3>
-        <p class="intro-text__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h3 class="intro-text__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
+        <p class="intro-text__description intro-text__description--index">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
     </section>
 
@@ -66,8 +73,11 @@
               <span class="advantages__divider advantages__divider--with-picture">— №1 —</span>
               <p class="advantages__description advantages__description--with-picture">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <img class="advantages__image" src="img/main_index/city_photo_house.jpg" width="320" height="260"
-              alt="Вид на здание Седоны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/main_index/city_photo_house-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="../img/main_index/city_photo_house-tablet.jpg">
+              <img class="advantages__image" src="img/main_index/city_photo_house.jpg" width="320" height="260" alt="Вид на здание Седоны">
+            </picture>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title advantages__title--housing">Жилье</h3>
@@ -87,8 +97,13 @@
               <span class="advantages__divider advantages__divider--with-picture">— №2 —</span>
               <p class="advantages__description advantages__description--with-picture">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages__image advantages__image--left" src="img/main_index/city_photo_nature.jpg" width="320" height="260"
-              alt="Вид на здание Седоны">
+            <div class="advantages__image--left">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/main_index/city_photo_nature-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="../img/main_index/city_photo_nature-tablet.jpg">
+                <img class="advantages__image" src="img/main_index/city_photo_nature.jpg" width="320" height="260" alt="Вид на мост Дьявола">
+              </picture>
+            </div>
           </li>
           <li class="advantages__item advantages__item--without-picture">
             <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
@@ -120,7 +135,11 @@
 
     <section class="map">
       <h2 class="visually-hidden">Карта Седоны</h2>
-      <img class="map__image" src="img/main_index/map.png" width="320" height="350" alt="Карта местности Седоны">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="../img/main_index/map-desktop.png">
+        <source media="(min-width: 768px)" srcset="../img/main_index/map-tablet.png">
+        <img class="map__image" src="img/main_index/map.png" width="320" height="350" alt="Карта местности Седоны">
+      </picture>
     </section>
 
   </main>
