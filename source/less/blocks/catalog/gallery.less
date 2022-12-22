@@ -73,7 +73,7 @@
 .gallery__item {
   position: relative;
 
-  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+  @media (min-width: @mobile-width-only) and (max-width: 650px) {
     &::before {
       content: "";
       position: absolute;
@@ -96,6 +96,30 @@
 
     @media (min-width: @desktop-width) {
       grid-column-start: span 3;
+    }
+  }
+}
+
+.gallery__image {
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+
+  &--big {
+    @media (min-width: @tablet-width) {
+      width: 648px;
+      height: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+      height: 400px;
     }
   }
 }

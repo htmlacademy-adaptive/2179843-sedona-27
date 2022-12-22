@@ -1,13 +1,65 @@
 .hero {
-  background-image: url("../img/hero_background.jpg");
+  background-image: url("../img/hero/hero-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 100%;
+  background-size: 280% auto;
   background-color: #dfedf6;
   display: flex;
   justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero-background-desktop@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 91px;
+    padding-left: 153px;
+    padding-right: 154px;
+    background-position: 50% 60%;
+    background-size: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-bottom: 90px;
+    padding-left: 370px;
+    padding-right: 370px;
+  }
 
   &--small {
-    background-image: url("../img/hero_background_catalog.jpg");
+    background-image: url("../img/hero/hero-background-catalog-desktop.jpg");
     background-color: #7a6769;
+    background-position: 50% 100%;
+    background-size: 280% auto;
+    padding-top: 52px;
+    padding-bottom: 67px;
+    padding-left: 45px;
+    padding-right: 46px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-background-catalog-desktop@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-top: 95px;
+      padding-bottom: 117px;
+      padding-left: 157px;
+      padding-right: 154px;
+      background-position: 50% 60%;
+      background-size: auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 101px;
+      padding-bottom: 120px;
+      padding-left: 369px;
+      padding-right: 371px;
+    }
   }
 }
