@@ -44,6 +44,7 @@
 }
 
 .video__image {
+
   @media (min-width: @tablet-width) {
     width: 648px;
     height: 500px;
@@ -53,4 +54,21 @@
     width: 800px;
     height: 500px;
   }
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__switcher {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 48px;
+  height: 54px;
+  border: none;
+  background-image: url ("../img/main_catalog/video-triangle.svg");
 }
