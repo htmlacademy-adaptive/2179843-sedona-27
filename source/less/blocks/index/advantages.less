@@ -12,6 +12,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    &--divider {
+      background-image: url("../img/main_index/divider-index.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .advantages__item {

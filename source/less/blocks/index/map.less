@@ -4,6 +4,21 @@
 }
 
 .map__image {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../img/main_index/map-marker.svg");
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 350px;
