@@ -15,7 +15,8 @@
       content: "";
       position: absolute;
       top: -1px;
-      width: 320px;
+      left: -100%;
+      width: 750px;
       height: 1px;
       background: #e5e5e5;
     }
@@ -69,7 +70,16 @@
   width: 48px;
   height: 54px;
   border: none;
-  background-image: url ("../img/main_catalog/video-triangle.svg");
   background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/main_catalog/video-triangle.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

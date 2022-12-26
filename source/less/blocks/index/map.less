@@ -1,12 +1,10 @@
 .map {
   display: flex;
   justify-content: center;
-}
-
-.map__image {
   position: relative;
 
   &::before {
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -19,7 +17,9 @@
     width: 27px;
     height: 27px;
   }
+}
 
+.map__image {
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 350px;
