@@ -13,13 +13,9 @@
 .main-header__logo-image {
   @media (min-width: @tablet-width) {
     position: absolute;
-    left: -95px;
+    translate: -50%;
     z-index: 1;
     top: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    left: -110px;
   }
 }
 
@@ -39,15 +35,5 @@
 
   .main-nav--opened .main-header__logo {
     display: none;
-  }
-}
-
-.main-header__logo {
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.5;
   }
 }
