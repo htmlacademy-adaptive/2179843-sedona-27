@@ -42,14 +42,9 @@ img {
 @media (min-width: 768px) {
   .main-header__logo-image {
     position: absolute;
-    left: -95px;
+    translate: -50%;
     z-index: 1;
     top: 0;
-  }
-}
-@media (min-width: 1200px) {
-  .main-header__logo-image {
-    left: -110px;
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
@@ -66,12 +61,6 @@ img {
   .main-nav--opened .main-header__logo {
     display: none;
   }
-}
-.main-header__logo:hover {
-  opacity: 0.7;
-}
-.main-header__logo:active {
-  opacity: 0.5;
 }
 .main-nav {
   position: absolute;
@@ -917,7 +906,7 @@ img {
     position: absolute;
     top: -24px;
     left: -100%;
-    width: 750px;
+    width: 300%;
     height: 1px;
     background: #e5e5e5;
   }
@@ -1014,7 +1003,7 @@ img {
     position: absolute;
     top: -1px;
     left: -100%;
-    width: 750px;
+    width: 300%;
     height: 1px;
     background: #e5e5e5;
   }
@@ -1106,7 +1095,7 @@ img {
   .registration__title--divider::before {
     content: "";
     position: absolute;
-    width: 750px;
+    width: 300%;
     height: 1px;
     left: -100%;
     top: -1px;
