@@ -12,6 +12,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    &--divider {
+      background-image: url("../img/main_index/divider-index.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .advantages__item {
@@ -53,6 +61,71 @@
       height: 1px;
     }
   }
+
+  &--with-icons {
+    background-repeat: no-repeat;
+
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      background-position: 4% 29%;
+    }
+
+    @media (min-width: @tablet-width) {
+      min-height: 330px;
+      background-position: center 30%;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: center 35%;
+    }
+
+    &:nth-child(4) {
+      @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+        padding-bottom: 46px;
+      }
+    }
+  }
+
+  &--food {
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      background-image: url("../img/main_index/burger.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/main_index/burger-tablet.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/main_index/burger-desktop.svg");
+    }
+  }
+
+  &--housing {
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      background-image: url("../img/main_index/house.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/main_index/house-tablet.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/main_index/house-desktop.svg");
+    }
+  }
+
+  &--gift {
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      background-image: url("../img/main_index/gift.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/main_index/gift-tablet.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/main_index/gift-desktop.svg");
+    }
+  }
 }
 
 .advantages__title {
@@ -68,6 +141,16 @@
 
   &--with-picture:first-child {
     padding-top: 54px;
+  }
+
+  &--with-icons {
+    position: relative;
+
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      text-align: start;
+      padding-top: 39px;
+      padding-bottom: 16px;
+    }
   }
 }
 
@@ -98,8 +181,20 @@
     color: #333333;
     text-align: start;
 
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
     @media (min-width: @tablet-width) {
       text-align: center;
+      width: 170px;
+    }
+  }
+
+  &--food {
+    @media (min-width: @tablet-width) {
+      width: 157px;
     }
   }
 }
@@ -120,5 +215,24 @@
 
   @media (min-width: @desktop-width) {
     width: 800px;
+  }
+}
+
+.advantages__text-wrapper {
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    width: 237px;
+    margin-right: 18px;
+    margin-left: 65px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 166px;
   }
 }

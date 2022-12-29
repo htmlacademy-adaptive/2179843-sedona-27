@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   justify-content: center;
-  background-image: url("../img/hero/hero-background-desktop.jpg");
+  background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
@@ -11,13 +11,13 @@
   width: 320px;
 
   @media (min-resolution: 2dppx) and  (min-resolution: 100dpi) {
-    background-image: url("../img/hero/hero-background-desktop@2x.jpg");
+    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-desktop@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
     padding-top: 77px;
     padding-bottom: 91px;
-    background-position: 50% 60%;
+    background-position: bottom 60%;
     background-size: auto;
     width: 768px;
   }
@@ -29,7 +29,7 @@
   }
 
   &--small {
-    background-image: url("../img/hero/hero-background-catalog-desktop.jpg");
+    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-catalog-desktop.jpg");
     background-color: #7a6769;
     background-position: 50% 100%;
     background-size: 280% auto;
@@ -37,13 +37,13 @@
     padding-bottom: 67px;
 
     @media (min-resolution: 2dppx) and  (min-resolution: 100dpi) {
-      background-image: url("../img/hero/hero-background-catalog-desktop@2x.jpg");
+      background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-catalog-desktop@2x.jpg");
     }
 
     @media (min-width: @tablet-width) {
       padding-top: 95px;
       padding-bottom: 117px;
-      background-position: 50% 60%;
+      background-position: bottom 60%;
       background-size: auto;
     }
 

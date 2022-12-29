@@ -54,3 +54,31 @@
     height: 500px;
   }
 }
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__switcher {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 48px;
+  height: 54px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/main_catalog/video-triangle.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
