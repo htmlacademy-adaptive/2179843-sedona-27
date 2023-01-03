@@ -1,13 +1,38 @@
 .modal-success {
   width: 320px;
+  position: absolute;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    top: 1789px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 640px;
+    top: 1242px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 979px;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
 .modal-success__text-container {
   margin: 39px 39px 30px 37px;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 53px;
+    margin-bottom: 50px;
+  }
 }
 
 .modal-succes__button-container {
@@ -23,6 +48,20 @@
   }
 }
 
+.modal-success__title {
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 30px;
+  }
+}
+
 .modal-success__button {
   padding: 18px 62px 14px 60px;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    min-width: 458px;
+  }
 }
