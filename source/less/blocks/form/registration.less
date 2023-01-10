@@ -20,9 +20,19 @@
   font-weight: 700;
   min-width: 320px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     &--contacts {
       text-align: start;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: @desktop-width) {
+      margin-right: 70px;
     }
   }
 
@@ -50,7 +60,7 @@
       width: 123px;
       height: 1px;
       background: #dbdbdb;
-      right: -141px;
+      right: -123px;
       top: 50%;
     }
 
@@ -60,7 +70,7 @@
       width: 123px;
       height: 1px;
       background: #dbdbdb;
-      left: -141px;
+      left: -123px;
       top: 50%;
     }
   }
@@ -72,12 +82,12 @@
 
     &--horizontal-divider::before {
       width: 280px;
-      right: -261px;
+      right: -283px;
     }
 
     &--horizontal-divider::after {
       width: 280px;
-      left: -261px;
+      left: -283px;
     }
   }
 }
@@ -188,6 +198,7 @@
       content: "";
       position: absolute;
       right: -43px;
+      top: 27px;
       width: 1px;
       height: 338px;
       background: #dbdbdb;
@@ -240,12 +251,15 @@
       display: grid;
       grid-template-columns: repeat(2, 280px);
       gap: 16px;
+      margin-bottom: 24px;
     }
 
     @media (min-width: @desktop-width) {
       grid-template-columns: repeat(3, 280px);
       row-gap: 17px;
       column-gap: 28px;
+      margin-top: 8px;
+      margin-bottom: 59px;
     }
   }
 
@@ -255,11 +269,14 @@
       grid-template-columns: repeat(2, 224px);
       column-gap: 32px;
       row-gap: 16px;
+      margin-bottom: 18px;
     }
 
     @media (min-width: @desktop-width) {
       grid-template-columns: repeat(4, 1fr);
       column-gap: 64px;
+      margin-top: 39px;
+      margin-bottom: 63px;
     }
   }
 }
@@ -268,7 +285,11 @@
   padding-left: 62px;
 
   @media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
-    padding-bottom: 36px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -320,6 +341,9 @@
   @media (min-width: @tablet-width) {
     margin-top: 23px;
     margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
   }
 }
 

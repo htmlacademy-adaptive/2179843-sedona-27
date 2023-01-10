@@ -5,6 +5,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
   }
 }
 
@@ -137,10 +138,39 @@
 
   &--with-picture {
     color: #ffffff;
+    padding-top: 54px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 34px;
+      margin-left: 61px;
+      margin-right: 61px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 133px;
+      margin-right: 133px;
+    }
   }
 
-  &--with-picture:first-child {
-    padding-top: 54px;
+  &--without-image {
+    @media (min-width: @tablet-width) {
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-top: 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+  }
+
+  &--without-divider {
+    padding-top: 37px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 34px;
+    }
   }
 
   &--with-icons {
@@ -175,6 +205,25 @@
 
   &--with-picture {
     color: #ffffff;
+    margin-right: 18px;
+    margin-left: 18px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 60px;
+      margin-left: 60px;
+    }
+  }
+
+  &--without-divider {
+    @media (min-width: @desktop-width) {
+      margin-right: 90px;
+      margin-left: 90px;
+    }
   }
 
   &--advice {
@@ -189,12 +238,52 @@
     @media (min-width: @tablet-width) {
       text-align: center;
       width: 170px;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 300px;
     }
   }
 
   &--food {
     @media (min-width: @tablet-width) {
       width: 157px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 300px;
+    }
+  }
+
+  &--gift {
+    @media (min-width: @desktop-width) {
+      width: 195px;
+    }
+  }
+
+  &--without-image {
+    margin-left: 33px;
+    margin-right: 33px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 52px;
+      padding-top: 6px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
+  &--middle {
+    @media (min-width: @tablet-width) {
+      width: 148px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 258px;
     }
   }
 }
@@ -226,13 +315,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 156px;
+    padding-top: 138px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 166px;
+    padding-top: 160px;
   }
 }

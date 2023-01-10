@@ -1,18 +1,41 @@
 .modal-error {
   width: 320px;
+  position: absolute;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    top: 1434px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 400px;
+    top: 1320px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1081px;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
 .modal-error__text-container {
   margin: 45px 42px 28px 41px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    margin-bottom: 43px;
+  }
 }
 
 .modal-error__title {
+  padding-bottom: 25px;
+
   @media (min-width: @tablet-width) {
     line-height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
@@ -25,5 +48,6 @@
 
   @media (min-width: @tablet-width) {
     width: 272px;
+    margin-bottom: 49px;
   }
 }

@@ -10,6 +10,14 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
   }
+
+  &--index {
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 }
 
 .intro-text__description {
@@ -23,5 +31,11 @@
 
   &--form {
     padding-top: 24px;
+  }
+
+  &--catalog {
+    @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+      width: 280px;
+    }
   }
 }
