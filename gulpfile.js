@@ -51,7 +51,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 }
 
 const copyImages = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
+return gulp.src('source/img/**/*.{png,jpg,svg}')
 .pipe(gulp.dest('build/img'))
 }
 
