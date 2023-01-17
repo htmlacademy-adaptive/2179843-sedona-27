@@ -29,13 +29,32 @@
   text-transform: uppercase;
   padding-top: 37px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 31px;
+  }
+
   &--form {
     padding-top: 24px;
+
+    @media (min-width: @desktop-width) {
+      padding-top: 31px
+    }
   }
 
   &--catalog {
     @media (min-width: @mobile-width-only) and (max-width: 650px) {
       width: 280px;
+      padding-top: 26px;
+      padding-bottom: 19px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-top: 31px;
+      padding-bottom: 0px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 30px;
     }
   }
 }

@@ -6,6 +6,7 @@
 .gallery__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -32,6 +33,13 @@
 }
 
 .gallery__description {
+  font-size: 14px;
+  padding-top: 7px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+  }
+
   @media (min-width: @desktop-width) {
     color: #ffffff;
   }
@@ -39,18 +47,23 @@
 
 .gallery__like-container {
   margin-top: 11px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   display: flex;
 
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 4px;
+  }
 }
 
 .gallery__like-amount {
-  margin-top: 5px;
+  margin-top: 7px;
   margin-left: 14px;
   font-weight: 700;
+  font-size: 14px;
 
   @media (min-width: @tablet-width) {
     margin-left: 9px;
@@ -77,7 +90,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -24px;
+      top: -25px;
       width: 320px;
       translate: -6%;
       height: 1px;

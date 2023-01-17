@@ -14,15 +14,13 @@
   padding-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
-
-  @media (min-width: @mobile-width-only) and (max-width: 650px) {
-    padding-left: 53px;
-    padding-right: 52px;
-  }
+  padding-left: 53px;
+  padding-right: 52px;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     font-size: 21px;
-    padding-bottom: 28px;
+    padding-bottom: 27px;
   }
 }
 
@@ -58,6 +56,8 @@
 
   @media (min-width: @tablet-width) {
     width: 616px;
+    min-height: 129px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {

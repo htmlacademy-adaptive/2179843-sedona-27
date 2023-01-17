@@ -18,21 +18,35 @@
   padding-top: 24px;
   padding-bottom: 20px;
   font-weight: 700;
+  font-size: 18px;
   min-width: 320px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    padding-top: 3px;
+    padding-bottom: 26px;
   }
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     &--contacts {
       text-align: start;
+      padding-left: 21px;
+    }
+  }
+
+  &--name {
+    @media (min-width: @tablet-width) {
+      padding-left: 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 71px;
     }
   }
 
   &--contacts {
     @media (min-width: @desktop-width) {
-      margin-right: 70px;
+      margin-right: 38px;
     }
   }
 
@@ -61,7 +75,7 @@
       height: 1px;
       background: #dbdbdb;
       right: -123px;
-      top: 50%;
+      top: 38%;
     }
 
     &--horizontal-divider::after {
@@ -71,7 +85,7 @@
       height: 1px;
       background: #dbdbdb;
       left: -123px;
-      top: 50%;
+      top: 38%;
     }
   }
 
@@ -83,11 +97,30 @@
     &--horizontal-divider::before {
       width: 280px;
       right: -283px;
+      top: 36%;
     }
 
     &--horizontal-divider::after {
       width: 280px;
-      left: -283px;
+      left: -277px;
+      top: 36%;
+    }
+  }
+
+  &--impression {
+    padding-bottom: 10px;
+  }
+
+  &--places {
+    padding-bottom: 10px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 17px;
+      padding-top: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 6px;
     }
   }
 }
@@ -99,10 +132,11 @@
   border: none;
   padding: 16px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: #000000;
   outline: none;
+  font-family: 'PT Sans';
 
 
   &::placeholder {
@@ -180,7 +214,9 @@
 
 .registration__label {
   padding-left: 16px;
+  font-size: 14px;
   text-transform: uppercase;
+  line-height: 22px;
 }
 
 .registration__container {
@@ -189,7 +225,7 @@
   align-items: center;
 
   &--name {
-    margin-bottom: 39px;
+    margin-bottom: 22px;
     position: relative;
   }
 
@@ -197,20 +233,20 @@
     &--name::before {
       content: "";
       position: absolute;
-      right: -43px;
-      top: 27px;
-      width: 1px;
-      height: 338px;
+      right: -44px;
+      top: 3px;
+      width: 2px;
+      height: 337px;
       background: #dbdbdb;
 
       @media (min-width: @desktop-width) {
-        right: -63px;
+        right: -67px;
       }
     }
   }
 
   &--contacts {
-    margin-bottom: 34px;
+    margin-bottom: 17px;
   }
 }
 
@@ -235,9 +271,20 @@
   padding: 0;
   margin: 0;
 
-  &--impression,
   &--places {
-    margin-bottom: 8px;
+    margin-bottom: 19px;
+  }
+
+  &--impression {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 21px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 28px;
+    }
   }
 }
 
@@ -252,14 +299,17 @@
       grid-template-columns: repeat(2, 280px);
       gap: 16px;
       margin-bottom: 24px;
+      margin-left: 122px;
+      margin-top: 7px;
     }
 
     @media (min-width: @desktop-width) {
       grid-template-columns: repeat(3, 280px);
       row-gap: 17px;
       column-gap: 28px;
-      margin-top: 8px;
+      margin-top: 24px;
       margin-bottom: 59px;
+      margin-left: 171px;
     }
   }
 
@@ -268,14 +318,15 @@
       display: grid;
       grid-template-columns: repeat(2, 224px);
       column-gap: 32px;
-      row-gap: 16px;
+      row-gap: 1px;
       margin-bottom: 18px;
+      margin-left: 47px;
     }
 
     @media (min-width: @desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 64px;
-      margin-top: 39px;
+      grid-template-columns: repeat(4, auto);
+      column-gap: 91px;
+      margin-top: 32px;
       margin-bottom: 63px;
     }
   }
@@ -283,13 +334,21 @@
 
 .registration__item {
   padding-left: 62px;
-
-  @media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
-    padding-bottom: 26px;
-  }
+  padding-bottom: 15px;
+  padding-right: 35px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    padding: 0;
+  }
+
+  &--places {
+    padding-left: 38px;
+    padding-bottom: 15px;
+    padding-right: 73px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -317,6 +376,8 @@
 }
 
 .registration__button-wrapper {
+  margin-bottom: 3px;
+
   @media (min-width: @tablet-width) {
     width: 648px;
     margin-bottom: 64px;
@@ -333,7 +394,7 @@
   text-transform: uppercase;
   font-size: 12px;
   color: rgba(51, 51, 51, 0.6);
-  margin-top: 3px;
+  margin-top: 5px;
   margin-bottom: 24px;
   display: flex;
   justify-content: right;

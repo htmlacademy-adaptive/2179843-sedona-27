@@ -46,10 +46,12 @@
   }
 
   &--small {
-    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-catalog-desktop.jpg");
+    background-image: url("../img/hero/hero-background-catalog-desktop.jpg");
     background-color: #7a6769;
     padding-top: 52px;
     padding-bottom: 67px;
+    background-position-y: -109px;
+    background-size: 279%;
 
     &::after {
       content: "";
@@ -78,11 +80,15 @@
     @media (min-width: @tablet-width) {
       padding-top: 95px;
       padding-bottom: 117px;
+      background-size: 156%;
+      background-position-y: -65px;
     }
 
     @media (min-width: @desktop-width) {
       padding-top: 101px;
       padding-bottom: 120px;
+      background-position-y: -57px;
+      background-size: 100%;
     }
   }
 }
