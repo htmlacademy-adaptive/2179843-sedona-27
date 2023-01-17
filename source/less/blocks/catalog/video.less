@@ -10,12 +10,13 @@
   margin-top: 17px;
   margin-bottom: 38px;
 
-  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+  @media (min-width: @mobile-width-only) and (max-width: 650px) {
     &::before {
       content: "";
       position: absolute;
       top: -1px;
       width: 320px;
+      translate: -9%;
       height: 1px;
       background: #e5e5e5;
     }
@@ -49,8 +50,14 @@
 }
 
 .video__description {
+  @media (min-width: @mobile-width-only) {
+    font-size: 15px;
+    width: 260px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 14px;
+    width: 445px;
   }
 }
 
