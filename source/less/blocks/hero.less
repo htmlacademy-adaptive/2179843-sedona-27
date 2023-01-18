@@ -1,24 +1,41 @@
 .hero {
   display: flex;
   justify-content: center;
-  background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-desktop.jpg");
+  background-image: url("../img/hero/hero-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 100%;
+  background-position: center;
   background-color: #dfedf6;
   padding-top: 90px;
   padding-bottom: 85px;
   width: 320px;
 
+  &--big::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/hero/intro-triangle.svg");
+    background-position: center;
+    width: 320px;
+    height: 57px;
+    top: 389px;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      top: 518px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+    }
+  }
+
   @media (min-resolution: 2dppx) and  (min-resolution: 100dpi) {
-    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-desktop@2x.jpg");
+    background-image: url("../img/hero/hero-background-desktop@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
     padding-top: 77px;
     padding-bottom: 91px;
-    background-position: bottom 60%;
-    background-size: auto;
     width: 768px;
   }
 
@@ -29,27 +46,49 @@
   }
 
   &--small {
-    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-catalog-desktop.jpg");
+    background-image: url("../img/hero/hero-background-catalog-desktop.jpg");
     background-color: #7a6769;
-    background-position: 50% 100%;
-    background-size: 280% auto;
     padding-top: 52px;
     padding-bottom: 67px;
+    background-position-y: -109px;
+    background-size: 279%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/hero/intro-triangle.svg");
+      background-position: center;
+      width: 320px;
+      height: 57px;
+      top: 158px;
+
+      @media (min-width: @tablet-width) {
+        width: 768px;
+        top: 290px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 1200px;
+        top: 301px;
+      }
+    }
 
     @media (min-resolution: 2dppx) and  (min-resolution: 100dpi) {
-      background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/hero-background-catalog-desktop@2x.jpg");
+      background-image: url("../img/hero/hero-background-catalog-desktop@2x.jpg");
     }
 
     @media (min-width: @tablet-width) {
       padding-top: 95px;
       padding-bottom: 117px;
-      background-position: bottom 60%;
-      background-size: auto;
+      background-size: 156%;
+      background-position-y: -65px;
     }
 
     @media (min-width: @desktop-width) {
       padding-top: 101px;
       padding-bottom: 120px;
+      background-position-y: -57px;
+      background-size: 100%;
     }
   }
 }
