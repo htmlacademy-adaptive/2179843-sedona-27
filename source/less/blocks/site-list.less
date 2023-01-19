@@ -26,6 +26,16 @@
   color: #ffffff;
   background: #81b3d2;
 
+  &:last-child {
+    background-image: url("../img/hero/gradient.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-width: @tablet-width) {
+      background-image: none;
+    }
+  }
+
   &:first-child {
     box-shadow: none;
   }
