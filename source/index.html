@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="/fonts/ptsans.woff2" crossorigin="anonymous" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" crossorigin="anonymous" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -103,7 +105,7 @@
               <span class="advantages__divider advantages__divider--with-picture">— №2 —</span>
               <p class="advantages__description advantages__description--with-picture advantages__description--without-divider">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantages__image--left">
+            <div class="advantages__image-container">
               <picture>
                 <source media="(min-width: 1200px)" srcset="../img/main_index/city_photo_nature-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="../img/main_index/city_photo_nature-tablet.jpg">
@@ -133,7 +135,7 @@
     <section class="search">
       <div class="search__container">
         <h3 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+        <p class="search__description">Укажите предполагаемые даты поездки,<span class="search__divider"></span> и мы покажем вам лучшие предложения гостиниц
           в седоне</p>
         <button class="search__button button">Найти Гостиницу</button>
       </div>

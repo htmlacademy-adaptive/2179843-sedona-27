@@ -9,6 +9,8 @@
   padding-top: 90px;
   padding-bottom: 85px;
   width: 320px;
+  position: relative;
+  z-index: -1;
 
   &--big::after {
     content: "";
@@ -17,7 +19,7 @@
     background-position: center;
     width: 320px;
     height: 57px;
-    top: 389px;
+    top: 332px;
 
     @media (min-width: @tablet-width) {
       width: 768px;
@@ -37,6 +39,8 @@
     padding-top: 77px;
     padding-bottom: 91px;
     width: 768px;
+    position: static;
+    z-index: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,7 +64,7 @@
       background-position: center;
       width: 320px;
       height: 57px;
-      top: 158px;
+      top: 101px;
 
       @media (min-width: @tablet-width) {
         width: 768px;

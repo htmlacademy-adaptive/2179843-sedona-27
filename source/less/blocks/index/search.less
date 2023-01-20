@@ -43,6 +43,13 @@
   }
 }
 
+.search__divider::after {
+  @media (min-width: @tablet-width) {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
 .search__description {
   width: 262px;
   line-height: 20px;
@@ -50,7 +57,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
-    width: 397px;
+    width: 435px;
     line-height: 22px;
   }
 }

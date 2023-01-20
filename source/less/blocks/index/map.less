@@ -1,8 +1,20 @@
 .map {
   margin-bottom: 10px;
+  width: 320px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/main_catalog/map-marker.svg"), url("../img/main_catalog/map-mobile.png");
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    width: 768px;
+    background-image: url("../img/main_catalog/map-marker.svg"), url("../img/main_catalog/map-tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-image: url("../img/main_catalog/map-marker.svg"), url("../img/main_catalog/map-desktop.png");
   }
 }
 

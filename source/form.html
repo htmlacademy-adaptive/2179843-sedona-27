@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="/fonts/ptsans.woff2" crossorigin="anonymous" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" crossorigin="anonymous" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -160,8 +162,8 @@
           </fieldset>
         </div>
         <div class="registration__comments comments">
-          <label class="registration__title--divider registration__title--horizontal-divider comments__label" for="comments-input">Опишите свои эмоции:</label>
-          <textarea class="comments__input" type="text" name="comment" id="comments-input" placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="registration__title registration__title--divider registration__title--horizontal-divider comments__label" for="comments-input">Опишите свои эмоции:</label>
+          <textarea class="comments__input" name="comment" id="comments-input" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <div class="registration__button-wrapper">
           <button class="registration__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -222,7 +224,7 @@
       <p class="modal__description modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В
         ближайшее время мы опубликуем его на сайте.</p>
     </div>
-    <div class="modal-succes__button-container">
+    <div class="modal-success__button-container">
       <button class="modal-success__button button" type="button">ЗАКРЫТЬ ОКНО</button>
     </div>
   </div>
