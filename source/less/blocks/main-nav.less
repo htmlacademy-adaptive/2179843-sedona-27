@@ -5,6 +5,11 @@
 
   &--nojs {
     position: static;
+    margin-bottom: 56px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: 100px) and (max-width: 757px) {
@@ -59,5 +64,13 @@
 
   .main-nav--closed .site-list__item {
     display: none;
+  }
+}
+
+.main-nav--nojs + .main-header__logo {
+  top: 220px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
   }
 }
